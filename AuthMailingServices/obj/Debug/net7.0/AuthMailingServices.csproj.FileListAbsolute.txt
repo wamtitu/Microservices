@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\AuthMailingServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\AuthMailingServices.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\AuthMailingServices.AssemblyInfo.cs
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\AuthMailingServices.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\.NET\AuthMailingServices\bin\Debug\net7.0\AuthMailingServices.deps.json
+C:\Users\HP\Desktop\.NET\AuthMailingServices\bin\Debug\net7.0\AuthMailingServices.dll
+C:\Users\HP\Desktop\.NET\AuthMailingServices\bin\Debug\net7.0\AuthMailingServices.pdb
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\AuthMailingServices.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\AuthMailingServices.dll
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\refint\AuthMailingServices.dll
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\AuthMailingServices.pdb
+C:\Users\HP\Desktop\.NET\AuthMailingServices\obj\Debug\net7.0\ref\AuthMailingServices.dll
