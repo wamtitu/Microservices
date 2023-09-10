@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj": {}
+    "C:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj": {}
   },
   "projects": {
-    "c:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj": {
+    "C:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj",
         "projectName": "Blog-Comments",
-        "projectPath": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Comments\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,7 +38,33 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
             },

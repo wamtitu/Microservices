@@ -1,3 +1,9 @@
+using Blog_Post.DbConnection;
+using Blog_Post.Extensions;
+using Blog_Post.Services;
+using Blog_Post.Services.IServices;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +12,19 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AppConnection>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("localConnection"));
+});
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddScoped<ICommentsService, CommentService>();
+builder.Services.AddScoped<IPostService, PostService>();
+builder.Services.AddHttpClient("Comment", c => c.BaseAddress = new Uri(builder.Configuration["ServiceUrl:CommentApi"]));
+
+builder.AddSwaggenGenExtension();
+builder.AddAppAuthentication();
 
 var app = builder.Build();
 
@@ -15,9 +34,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseMigration();
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

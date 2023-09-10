@@ -13,5 +13,6 @@ namespace Blog_Post.Services.IServices
         Task<string> UpdatePostAsync(Post newPost);
         Task<List<Post>> GetPostsAsync();
         Task <Post> GetPostById(Guid Id);
+        Task<List<Post>> GetUSersPosts(Guid id);
     }
 }

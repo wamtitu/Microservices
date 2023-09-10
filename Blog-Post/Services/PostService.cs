@@ -2,36 +2,60 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Blog_Post.DbConnection;
 using Blog_Post.Models;
 using Blog_Post.Services.IServices;
+using Microsoft.EntityFrameworkCore;
 
 namespace Blog_Post.Services
 {
     public class PostService : IPostService
     {
-        public Task<string> CreatePostAsync(Post newPost)
+        private readonly AppConnection _context;
+        private readonly IMapper _mapper;
+
+        public PostService(AppConnection context, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _mapper = mapper;
+        }
+        public async Task<string> CreatePostAsync(Post newPost)
+        {
+            await _context.Posts.AddAsync(newPost);
+            await _context.SaveChangesAsync();
+            return "Blog posted succesfully";
+            
         }
 
-        public Task<string> DeletePostAsync(Post newpost)
+        public async Task<string> DeletePostAsync(Post newpost)
         {
-            throw new NotImplementedException();
+            _context.Posts.Remove(newpost);
+            await _context.SaveChangesAsync();
+            return "Post deleted successfully";
+            
         }
 
         public Task<Post> GetPostById(Guid Id)
         {
-            throw new NotImplementedException();
+            return _context.Posts.FirstOrDefaultAsync(u=>u.PostId == Id);
         }
 
-        public Task<List<Post>> GetPostsAsync()
+        public async Task<List<Post>> GetPostsAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Posts.Include(p => p.Comments).ToListAsync();
         }
 
-        public Task<string> UpdatePostAsync(Post newPost)
+        public async Task<List<Post>> GetUSersPosts(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.Posts.Where(u=>u.UserId == id).ToListAsync();
+        }
+
+        public async Task<string> UpdatePostAsync(Post newPost)
+        {
+            _context.Posts.Update(newPost);
+            await _context.SaveChangesAsync();
+            return "post updated successfully";
         }
     }
 }
