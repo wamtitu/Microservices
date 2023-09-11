@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using Blog_Comments.Models;
@@ -28,13 +29,28 @@ namespace Blog_Comments.Controllers
         
         [HttpPost("AddComment")]
         [Authorize]
-        public async Task<ActionResult<string>> CreatePost(CommentDto newComment){
-            var post = _mapper.Map<Comment>(newComment);
-            var response = await _commentService.CreateCommentAsync(post);
-            return Ok(response);
+        public async Task<ActionResult<string>> CreateComment(CommentDto newComment){
+            try
+            {
+                 var id = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            System.Console.WriteLine(id);
+            if(id != null){
+                newComment.UserId  = Guid.Parse(id);
+                var post = _mapper.Map<Comment>(newComment);
+                var response = await _commentService.CreateCommentAsync(post);
+                return Ok(response);
+            }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+            return "Invalid user";
+            
         }
 
-         [HttpGet("GetCommentsByUSer{id}")]
+         [HttpGet("GetCommentsByUSer/{id}")]
         public async Task<ActionResult<List<Comment>>> GetPosts(Guid id){
             var comments = await _commentService.GetCommentByUser(id);
             if(comments==null){
@@ -95,7 +111,7 @@ namespace Blog_Comments.Controllers
             return Ok(_responseDto);
         }
 
-        [HttpGet("post{id}")]
+        [HttpGet("post/{id}")]
         public async Task<ActionResult<List<Comment>>> GetuserPosts(Guid id){
             var comments = await _commentService.GetCommentsByPostAsync(id);
             if(comments == null){
@@ -104,8 +120,8 @@ namespace Blog_Comments.Controllers
 
                 return BadRequest(_responseDto);
             }
-            _responseDto.Result=comments;
-            return Ok(_responseDto);
+            // _responseDto.Result=comments;
+            return Ok(comments);
         }
     }
 }

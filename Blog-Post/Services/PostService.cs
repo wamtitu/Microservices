@@ -14,11 +14,13 @@ namespace Blog_Post.Services
     {
         private readonly AppConnection _context;
         private readonly IMapper _mapper;
+        private readonly ICommentsService _commentService;
 
-        public PostService(AppConnection context, IMapper mapper)
+        public PostService(AppConnection context, IMapper mapper, ICommentsService commentService)
         {
             _context = context;
             _mapper = mapper;
+            _commentService = commentService;
         }
         public async Task<string> CreatePostAsync(Post newPost)
         {
@@ -36,9 +38,14 @@ namespace Blog_Post.Services
             
         }
 
-        public Task<Post> GetPostById(Guid Id)
+        public async Task<Post> GetPostById(Guid Id)
         {
-            return _context.Posts.FirstOrDefaultAsync(u=>u.PostId == Id);
+            var post= await _context.Posts.FirstOrDefaultAsync(u=>u.PostId == Id);
+            if(post !=null){
+                post.Comments = await _commentService.GetCommentsAsync(Id);
+                return post;
+            }
+            return new Post();
         }
 
         public async Task<List<Post>> GetPostsAsync()

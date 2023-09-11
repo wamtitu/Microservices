@@ -16,19 +16,19 @@ namespace Blog_Post.Services
             _clientFactory = clientFactory;
         }
 
-        public async Task<IEnumerable<Comment>> GetCommentsAsync()
+        public async Task<List<Comment>> GetCommentsAsync(Guid Id)
         {
             
             try
             {
                 var client = _clientFactory.CreateClient("Comment");
-                var response = await client.GetAsync("api/Comment/post");
+                var response = await client.GetAsync($"/api/Comment/post/{Id}");
                 var content = await response.Content.ReadAsStringAsync();
                 var responseDto = JsonConvert.DeserializeObject<ResponseDto>(content);
 
                 if (responseDto.IsSuccess)
                 {
-                    return JsonConvert.DeserializeObject<IEnumerable<Comment>>(Convert.ToString(responseDto.Result));
+                    return JsonConvert.DeserializeObject<List<Comment>>(Convert.ToString(responseDto.Result));
                 }
                 
             }

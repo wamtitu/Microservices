@@ -19,9 +19,9 @@ builder.Services.AddDbContext<AppConnection>(options =>
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddHttpClient("Comment", c => c.BaseAddress = new Uri(builder.Configuration["ServiceUrl:CommentApi"]));
 builder.Services.AddScoped<ICommentsService, CommentService>();
 builder.Services.AddScoped<IPostService, PostService>();
-builder.Services.AddHttpClient("Comment", c => c.BaseAddress = new Uri(builder.Configuration["ServiceUrl:CommentApi"]));
 
 builder.AddSwaggenGenExtension();
 builder.AddAppAuthentication();

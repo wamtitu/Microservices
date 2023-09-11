@@ -8,6 +8,6 @@ namespace Blog_Post.Services.IServices
 {
     public interface ICommentsService
     {
-        Task<IEnumerable<Comment>> GetCommentsAsync();
+        Task<List<Comment>> GetCommentsAsync(Guid Id);
     }
 }
