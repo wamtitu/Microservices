@@ -10,7 +10,7 @@ namespace Blog_X.Services.Posts
     public interface IPostInterface
     {
         Task<List<PostDto>> GetPostsAsync();
-        Task<ResponseDto> GetPostByIdAsync(Guid Id);
+        Task<PostDto> GetPostByIdAsync(Guid Id);
         Task<ResponseDto> DeletePostAsync(PostDto deletePost);
         Task<ResponseDto> UpdatePostAsync(PostDto UpdatedPost);
         Task<ResponseDto> AddPostAsync(PostDto newPost);

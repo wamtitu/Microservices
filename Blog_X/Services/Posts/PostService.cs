@@ -27,7 +27,7 @@ namespace Blog_X.Services.Posts
             throw new NotImplementedException();
         }
 
-        public Task<ResponseDto> GetPostByIdAsync(Guid Id)
+        public Task<PostDto> GetPostByIdAsync(Guid Id)
         {
             throw new NotImplementedException();
         }

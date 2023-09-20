@@ -840,3 +840,4 @@ C:\Users\HP\Desktop\.NET\Blog_X\bin\Debug\net7.0\Microsoft.AspNetCore.Components
 C:\Users\HP\Desktop\.NET\Blog_X\obj\Debug\net7.0\build-gz\SZIew7Ag.gz
 C:\Users\HP\desktop\.NEt\Blog_X\obj\Debug\net7.0\build-gz\i6V+UrRn.gz
 C:\Users\HP\desktop\.NEt\Blog_X\obj\Debug\net7.0\build-gz\fH1OefPI.gz
+C:\Users\HP\desktop\.NEt\Blog_X\obj\Debug\net7.0\scopedcss\Pages\Home.razor.rz.scp.css
