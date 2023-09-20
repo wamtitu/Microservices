@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Blog_X.Models;
 using Blog_X.Models.Post;
@@ -17,9 +18,20 @@ namespace Blog_X.Services.Posts
         {
             _httpClient = httpClient;
         }
-        public Task<ResponseDto> AddPostAsync(PostDto newPost)
+        public async Task<string> AddPostAsync(PostDto newPost)
         {
-            throw new NotImplementedException();
+            var request = JsonConvert.SerializeObject(newPost);
+            var body = new StringContent(request, Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync($"{BaseUrl}/api/Post/Addpost", body);
+            var content = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(content);
+           
+
+            if(content !=null){
+                return content;
+            }
+            return "error occures";
+
         }
 
         public Task<ResponseDto> DeletePostAsync(PostDto deletePost)

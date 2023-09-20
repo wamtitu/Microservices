@@ -1,16 +1,20 @@
 .nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgb(47, 47, 128);
+    opacity: 0.9;
     height: 15vh;
     color: white;
+    
 }
 .links{
     margin-right: 10%;
 }
 .links a{
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 10px;
+    font-size: large;
 }

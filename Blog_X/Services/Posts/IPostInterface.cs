@@ -13,6 +13,6 @@ namespace Blog_X.Services.Posts
         Task<PostDto> GetPostByIdAsync(Guid Id);
         Task<ResponseDto> DeletePostAsync(PostDto deletePost);
         Task<ResponseDto> UpdatePostAsync(PostDto UpdatedPost);
-        Task<ResponseDto> AddPostAsync(PostDto newPost);
+        Task<string> AddPostAsync(PostDto newPost);
     }
 }
