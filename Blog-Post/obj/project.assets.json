@@ -4065,11 +4065,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+      "projectUniqueName": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
       "projectName": "Blog-Post",
-      "projectPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+      "projectPath": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\obj\\",
+      "outputPath": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4154,7 +4154,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {}
+    "C:\\Users\\HP\\desktop\\.NEt\\Auth-Blogger\\Auth-Blogger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {
+    "C:\\Users\\HP\\desktop\\.NEt\\Auth-Blogger\\Auth-Blogger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\desktop\\.NEt\\Auth-Blogger\\Auth-Blogger.csproj",
         "projectName": "Auth-Blogger",
-        "projectPath": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
+        "projectPath": "C:\\Users\\HP\\desktop\\.NEt\\Auth-Blogger\\Auth-Blogger.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\obj\\",
+        "outputPath": "C:\\Users\\HP\\desktop\\.NEt\\Auth-Blogger\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -108,7 +108,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

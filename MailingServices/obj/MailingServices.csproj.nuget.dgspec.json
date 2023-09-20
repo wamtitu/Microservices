@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj": {}
+    "c:\\Users\\HP\\desktop\\.NEt\\MailingServices\\MailingServices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj": {
+    "c:\\Users\\HP\\desktop\\.NEt\\MailingServices\\MailingServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NEt\\MailingServices\\MailingServices.csproj",
         "projectName": "MailingServices",
-        "projectPath": "C:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj",
+        "projectPath": "c:\\Users\\HP\\desktop\\.NEt\\MailingServices\\MailingServices.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\desktop\\.NET\\MailingServices\\obj\\",
+        "outputPath": "c:\\Users\\HP\\desktop\\.NEt\\MailingServices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -112,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

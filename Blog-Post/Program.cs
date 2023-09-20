@@ -23,6 +23,13 @@ builder.Services.AddHttpClient("Comment", c => c.BaseAddress = new Uri(builder.C
 builder.Services.AddScoped<ICommentsService, CommentService>();
 builder.Services.AddScoped<IPostService, PostService>();
 
+builder.Services.AddCors(options => options.AddPolicy("policy1", build =>
+{
+    build.WithOrigins("http://localhost:5100");
+    build.AllowAnyHeader();
+    build.AllowAnyMethod();
+}));
+
 builder.AddSwaggenGenExtension();
 builder.AddAppAuthentication();
 
@@ -42,5 +49,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseCors("policy1");
 
 app.Run();

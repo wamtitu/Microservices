@@ -1,0 +1,16 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(47, 47, 128);
+    height: 15vh;
+    color: white;
+}
+.links{
+    margin-right: 10%;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}

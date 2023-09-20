@@ -58,6 +58,7 @@ namespace Blog_Post.Controllers
 
                 return BadRequest(_responseDto);
             }
+            Console.WriteLine(post.Comments.Count);
 
             _responseDto.Result = post;
             return Ok(_responseDto);

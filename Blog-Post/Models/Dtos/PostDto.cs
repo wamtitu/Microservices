@@ -14,5 +14,7 @@ namespace Blog_Post.Models.Dtos
         public string Title {get; set;}
         [Required]
         public string Description {get;set;}
+
+        public string ImageUrl {get; set;}
     }
 }

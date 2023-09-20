@@ -1,0 +1,20 @@
+.main{
+    height: 65vh;
+    margin: 4% 20%;
+    border: 2px solid rgb(52, 52, 136);
+    background: rgb(46, 46, 124);
+    color: white;
+    border-radius: 2%;
+}
+.banner{
+    height: 60vh;
+}
+.banner img{
+    margin: 6% 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 4%;
+}
+.reg{
+    color: rgb(16, 235, 16);
+}

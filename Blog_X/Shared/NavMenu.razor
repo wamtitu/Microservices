@@ -1,0 +1,30 @@
+﻿@inject NavigationManager navigationManager
+@inject AuthenticationStateProvider authProvider
+@inject NavigationManager navigationManager
+@inject ILocalStorageService localStorage
+
+<div class="nav">
+    <h2>Blog_X</h2>
+    <div class="links">
+        <AuthorizeView>
+            <Authorized>
+                <a href="/">home</a>
+                <a href="/posts">posts</a>
+                <button class="btn btn-danger" @onclick ="logout">logout</button>
+            </Authorized>
+            <NotAuthorized>
+                <a href="/login">login</a>
+                <a href="/register">register</a>
+            </NotAuthorized>
+        </AuthorizeView>
+        
+    </div>
+</div>
+
+@code{
+    private async Task logout(){
+        await localStorage.RemoveItemAsync("Token");
+        await authProvider.GetAuthenticationStateAsync();
+        navigationManager.NavigateTo("/login");
+    }
+}

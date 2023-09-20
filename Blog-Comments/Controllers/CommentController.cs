@@ -120,8 +120,8 @@ namespace Blog_Comments.Controllers
 
                 return BadRequest(_responseDto);
             }
-            // _responseDto.Result=comments;
-            return Ok(comments);
+            _responseDto.Result=comments;
+            return Ok(_responseDto);
         }
     }
 }
