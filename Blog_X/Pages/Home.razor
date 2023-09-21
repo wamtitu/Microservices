@@ -15,12 +15,14 @@
                     <div class="image1">
                         <img src="@post.ImageUrl" alt=""/>
                     </div>
-                    <div>
-                        <p>@post.Title</p>
-                        <p>@post.Description</p>
-                    <div class="row">
-                        <a href="/post/update/@post.PostId">update</a>
-                        <button @onclick="@(()=>deletePost(post.PostId))" style="width:100px" class=" p-2 m-1 btn btn-primary">delete</button>
+                    <div class="item">
+                        <div class="col-5 story">
+                            <p>@post.Title</p>
+                            <p> @post.Description</p>
+                        </div>
+                    <div class="row buttons">
+                        <button @onclick="@(()=>deletePost(post.PostId))" style="width:100px" class=" p-2 m-1 btn btn-danger">delete</button>
+                        <button style="width:100px" class=" p-2 m-1 btn btn-primary"><a  href="/post/update/@post.PostId">update</a></button>
                     </div>
                     </div>
                 </div>

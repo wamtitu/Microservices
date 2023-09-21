@@ -839,5 +839,5 @@ C:\Users\HP\Desktop\.NET\Blog_X\bin\Debug\net7.0\wwwroot\_framework\Microsoft.As
 C:\Users\HP\Desktop\.NET\Blog_X\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Users\HP\Desktop\.NET\Blog_X\obj\Debug\net7.0\build-gz\SZIew7Ag.gz
 C:\Users\HP\desktop\.NEt\Blog_X\obj\Debug\net7.0\scopedcss\Pages\Home.razor.rz.scp.css
-C:\Users\HP\desktop\.NET\Blog_X\obj\Debug\net7.0\build-gz\36upii6u.gz
-C:\Users\HP\desktop\.NET\Blog_X\obj\Debug\net7.0\build-gz\+tJy3sat.gz
+C:\Users\HP\Desktop\.NET\Blog_X\obj\Debug\net7.0\build-gz\xUcV2MB5.gz
+C:\Users\HP\Desktop\.NET\Blog_X\obj\Debug\net7.0\build-gz\yOQNONN5.gz

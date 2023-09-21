@@ -74,9 +74,19 @@ namespace Blog_X.Services.Posts
             return new List<PostDto>();
         }
 
-        public Task<ResponseDto> UpdatePostAsync(PostDto UpdatedPost)
+        public async Task<ResponseDto> UpdatePostAsync(Guid id, PostDto UpdatedPost)
         {
-            throw new NotImplementedException();
+            var request = JsonConvert.SerializeObject(UpdatedPost);
+
+            var body = new StringContent(request, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync($"{BaseUrl}/api/Post/{id}", body);
+            var content = response.Content.ReadAsStringAsync();
+            var res = JsonConvert.DeserializeObject<ResponseDto>(content.Result.ToString());
+            if(res.IsSuccess){
+                return res;
+            }
+            return new ResponseDto();
         }
     }
 }

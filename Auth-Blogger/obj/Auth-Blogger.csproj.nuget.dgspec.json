@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {}
+    "C:\\Users\\HP\\Desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {
+    "C:\\Users\\HP\\Desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
         "projectName": "Auth-Blogger",
-        "projectPath": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\.NET\\Auth-Blogger\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"

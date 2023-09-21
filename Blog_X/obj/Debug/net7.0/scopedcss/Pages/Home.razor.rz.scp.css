@@ -1,3 +1,7 @@
+body[b-9t84wit9pu]{
+    padding: 0;
+    margin: 0;
+}
 .main[b-9t84wit9pu]{
     /* margin-top: 16vh; */
     display: flex;
@@ -11,9 +15,7 @@
 .main1[b-9t84wit9pu]{
     display: flex;
     gap: 0px;
-    width: 90%;
-    overflow-x: hidden;
-    
+    width: 90%;    
 }
 .hotT[b-9t84wit9pu]{
     /* margin-top: 15vh; */
@@ -38,14 +40,33 @@
 
 }
 .post1[b-9t84wit9pu]{
-    height: 70vh;
-    width: 80%;
+    height: 75vh;
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 4%;
 }
 .image1[b-9t84wit9pu] {
-    height: 60%;
+    height: 75%;
 }
 .image1 img[b-9t84wit9pu]{
     height: 100%;
     width: 100%;
-    border-radius: 4%;
+    border-radius: 1%;
+}
+button a[b-9t84wit9pu]{
+    color: white;
+    text-decoration: none;
+}
+.btn-primary[b-9t84wit9pu]{
+    margin-right: 10px;
+}
+.story p[b-9t84wit9pu]{
+    margin-bottom: 0rem;
+    margin-left: 10px;
+}
+.buttons[b-9t84wit9pu]{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
 }

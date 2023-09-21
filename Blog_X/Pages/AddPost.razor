@@ -1,5 +1,6 @@
 @page "/Post"
 @page "/post/update/{Id}"
+@inject NavigationManager navigationManager
 
 @inject IPostInterface postservice
 <div class="">
@@ -52,13 +53,20 @@
     private async Task AddPosts(){
         var authstate = await _authState;
         var userId = authstate.User.FindFirst("sub")?.Value;
-        newPost.UserId = Guid.Parse(userId);
-        var res = await postservice.AddPostAsync(newPost);
+        
+        if(newPost.PostId ==null || newPost.PostId == Guid.Empty){
+            newPost.UserId = Guid.Parse(userId);
+            Console.WriteLine(newPost.UserId);
+            var res = await postservice.AddPostAsync(newPost);
+            navigationManager.NavigateTo("/");
+        }else{
+            var res = await postservice.UpdatePostAsync(newPost.PostId, newPost);
+            navigationManager.NavigateTo("/");
+        }
 
         newPost.Title = "";
         newPost.Description = "";
         newPost.ImageUrl = "";
-        Console.WriteLine(res);
     }
 
      protected override async Task OnParametersSetAsync()

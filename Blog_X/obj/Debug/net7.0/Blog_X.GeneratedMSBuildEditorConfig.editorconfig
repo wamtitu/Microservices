@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Blog_X
 build_property.RootNamespace = Blog_X
-build_property.ProjectDir = C:\Users\HP\desktop\.NET\Blog_X\
+build_property.ProjectDir = C:\Users\HP\Desktop\.NET\Blog_X\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP\desktop\.NET\Blog_X
+build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\.NET\Blog_X
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/desktop/.NET/Blog_X/App.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/desktop/.NET/Blog_X/Pages/AddPost.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/Pages/AddPost.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/desktop/.NET/Blog_X/Shared/SurveyPrompt.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/desktop/.NET/Blog_X/_Imports.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/desktop/.NET/Blog_X/Pages/Home.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-9t84wit9pu
 
-[C:/Users/HP/desktop/.NET/Blog_X/Pages/Login.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-c7b0irm62y
 
-[C:/Users/HP/desktop/.NET/Blog_X/Pages/Register.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-4cbbtjxum1
 
-[C:/Users/HP/desktop/.NET/Blog_X/Shared/MainLayout.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-t3hhdlc7lg
 
-[C:/Users/HP/desktop/.NET/Blog_X/Shared/NavMenu.razor]
+[C:/Users/HP/Desktop/.NET/Blog_X/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dwgkmzrj26
