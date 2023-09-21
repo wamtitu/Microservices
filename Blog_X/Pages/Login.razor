@@ -1,4 +1,4 @@
-@page "/login"
+@page "/"
 @inject IAuthInteface auth
 @inject ILocalStorageService localStorage
 @inject NavigationManager navigation
@@ -39,9 +39,9 @@
     private async Task LoginUser(){
         var res = await auth.Login(newLogin);
         if(!string.IsNullOrWhiteSpace(res.Token)){
-            await localStorage.SetItemAsStringAsync("Token", res.Token);
-            navigation.NavigateTo("/");
+             localStorage.SetItemAsStringAsync("Token", res.Token);
         }
+        navigation.NavigateTo("/home");
         newLogin.Email = "";
         newLogin.Password = "";
     }

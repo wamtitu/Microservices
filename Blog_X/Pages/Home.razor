@@ -1,4 +1,4 @@
-﻿@page "/"
+﻿@page "/home"
 @inject IPostInterface postinterface
 <div class="main1">
     <div class="hotT">
@@ -12,18 +12,29 @@
                 <div class= "main">
                 @foreach(var post in posts){
                 <div class="post1">
+                    <div class = "user1">
+                        <div class="user">
+                            <div class="avater"></div>
+                            <p>Joseph</p>
+                        </div>
+                        <h1>...</h1>
+
+                    </div>
                     <div class="image1">
                         <img src="@post.ImageUrl" alt=""/>
                     </div>
                     <div class="item">
-                        <div class="col-5 story">
+                        <div class="col-12 story">
                             <p>@post.Title</p>
                             <p> @post.Description</p>
                         </div>
-                    <div class="row buttons">
-                        <button @onclick="@(()=>deletePost(post.PostId))" style="width:100px" class=" p-2 m-1 btn btn-danger">delete</button>
-                        <button style="width:100px" class=" p-2 m-1 btn btn-primary"><a  href="/post/update/@post.PostId">update</a></button>
-                    </div>
+                        @if(Id == post.UserId){
+
+                            <div class="row buttons">
+                                <button @onclick="@(()=>deletePost(post.PostId))" style="width:100px" class=" p-2 m-1 btn btn-danger">delete</button>
+                                <button style="width:100px" class=" p-2 m-1 btn btn-primary"><a  href="/post/update/@post.PostId">update</a></button>
+                            </div>
+                        }
                     </div>
                 </div>
                 }
@@ -40,20 +51,23 @@
     
     private bool isLoading = true;
 
-    @* private string role { get; set; }
-    private bool authenticated { get; set; } *@
+    public  Guid? Id { get; set; }
 
-    @* [CascadingParameter]
-    public Task<AuthenticationState> _authState { get; set; } *@
+     [CascadingParameter]
+    public Task<AuthenticationState> _authState { get; set; }
 
     protected override async Task OnInitializedAsync(){
+        
+        var authState = await _authState;
+        var user = authState.User.FindFirst("sub")?.Value;
+        Console.WriteLine(user);
+
         posts = await postinterface.GetPostsAsync();
+        if(user != null){
+            Id = Guid.Parse(user);
+        }
         isLoading = false;
 
-        @* var authState = await _authState;
-        role = authState.User.FindFirst("role")?.Value;
-        authenticated = authState.User.Identity.IsAuthenticated;
-        Console.WriteLine(authenticated); *@
     }
 
     public async Task deletePost(Guid id){

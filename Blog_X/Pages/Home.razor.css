@@ -40,14 +40,17 @@ body{
 
 }
 .post1{
-    height: 75vh;
-    width: 85%;
+    /* height: 75vh; */
+    width: 70%;
     border: 1px solid black;
     border-radius: 5px;
     margin-top: 4%;
 }
 .image1 {
-    height: 75%;
+    /* margin: 10px; */
+    margin:0 5%;
+    height: 45vh;
+    width: 90%;
 }
 .image1 img{
     height: 100%;
@@ -63,10 +66,30 @@ button a{
 }
 .story p{
     margin-bottom: 0rem;
-    margin-left: 10px;
+    margin-left: 5%;
 }
 .buttons{
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
+}
+
+.avater{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://images.pexels.com/photos/18218828/pexels-photo-18218828/free-photo-of-man-in-a-cute-helmet-on-a-motorbike.png?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.user1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2% 8% ;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
 }

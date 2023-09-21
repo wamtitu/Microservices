@@ -8,12 +8,12 @@
     <div class="links">
         <AuthorizeView>
             <Authorized>
-                <a href="/">home</a>
+                <a href="/home">home</a>
                 <a href="/posts">posts</a>
                 <button class="btn btn-danger" @onclick ="logout">logout</button>
             </Authorized>
             <NotAuthorized>
-                <a href="/login">login</a>
+                <a href="/">login</a>
                 <a href="/register">register</a>
             </NotAuthorized>
         </AuthorizeView>
@@ -25,6 +25,6 @@
     private async Task logout(){
         await localStorage.RemoveItemAsync("Token");
         await authProvider.GetAuthenticationStateAsync();
-        navigationManager.NavigateTo("/login");
+        navigationManager.NavigateTo("/");
     }
 }
