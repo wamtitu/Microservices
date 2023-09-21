@@ -16,8 +16,12 @@
                         <img src="@post.ImageUrl" alt=""/>
                     </div>
                     <div>
-                        <h3>@post.Title</h3>
+                        <p>@post.Title</p>
                         <p>@post.Description</p>
+                    <div class="row">
+                        <a href="/post/update/@post.PostId">update</a>
+                        <button @onclick="@(()=>deletePost(post.PostId))" style="width:100px" class=" p-2 m-1 btn btn-primary">delete</button>
+                    </div>
                     </div>
                 </div>
                 }
@@ -48,5 +52,11 @@
         role = authState.User.FindFirst("role")?.Value;
         authenticated = authState.User.Identity.IsAuthenticated;
         Console.WriteLine(authenticated); *@
+    }
+
+    public async Task deletePost(Guid id){
+        Console.WriteLine(id);
+        var res = await postinterface.DeletePostAsync(id);
+        Console.WriteLine("deleted");
     }
 }

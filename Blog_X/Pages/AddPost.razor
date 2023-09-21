@@ -1,8 +1,16 @@
 @page "/Post"
+@page "/post/update/{Id}"
 
 @inject IPostInterface postservice
 <div class="">
-
+  @if (string.IsNullOrWhiteSpace(newPost.Title))
+        {
+            <h1> Add Post</h1>
+        }
+        else
+        {
+            <h1> Update Post</h1>
+        }
 <EditForm Model="newPost" OnValidSubmit="AddPosts">
     <div class="form-group p-2">
         <label for="name">Title</label>
@@ -20,7 +28,14 @@
         <ValidationMessage For="@(()=>newPost.ImageUrl)" />
     </div>
     <div class="flex-row m-2" p-2>
-        <button type="submit" style="width:100px" class=" p-2 m-1 btn btn-primary">Post</button>
+         @if (newPost.PostId == Guid.Empty)
+                {
+                    <button type="submit" style="width:150px" class=" p-2 m-1 btn btn-primary">Add Product</button>
+                }
+                else
+                {
+                <button type="submit" style="width:150px" class=" p-2 m-1 btn btn-primary">Update Product</button>
+                }
     </div>
 </EditForm>
     
@@ -28,6 +43,8 @@
 
 @code{
     private PostDto newPost = new PostDto();
+     [Parameter]
+    public  string Id { get; set; }
 
      [CascadingParameter]
     public Task<AuthenticationState> _authState { get; set; }
@@ -42,5 +59,14 @@
         newPost.Description = "";
         newPost.ImageUrl = "";
         Console.WriteLine(res);
+    }
+
+     protected override async Task OnParametersSetAsync()
+    {
+        if (!string.IsNullOrWhiteSpace(Id))
+        {
+            newPost = await postservice.GetPostByIdAsync(Guid.Parse(Id));
+        }
+       
     }
 }

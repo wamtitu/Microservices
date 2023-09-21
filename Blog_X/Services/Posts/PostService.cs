@@ -34,14 +34,32 @@ namespace Blog_X.Services.Posts
 
         }
 
-        public Task<ResponseDto> DeletePostAsync(PostDto deletePost)
+        public async Task<ResponseDto> DeletePostAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var res = await _httpClient.DeleteAsync($"{BaseUrl}/api/Post/{id}");
+            var content = await res.Content.ReadAsStringAsync();
+
+            var results = JsonConvert.DeserializeObject<ResponseDto>(content);
+            if (results.IsSuccess)
+            {
+                
+                return results;
+
+            }
+
+            return new ResponseDto();
         }
 
-        public Task<PostDto> GetPostByIdAsync(Guid Id)
+        public async Task<PostDto> GetPostByIdAsync(Guid Id)
         {
-            throw new NotImplementedException();
+           var response = await _httpClient.GetAsync($"{BaseUrl}/api/Post/onePost?Id={Id}");
+           var content = await response.Content.ReadAsStringAsync();
+            var results = JsonConvert.DeserializeObject<ResponseDto>(content);
+            if(results.IsSuccess){
+                return JsonConvert.DeserializeObject<PostDto>(results.Result.ToString());
+            }
+            return new PostDto();
+
         }
 
         public async Task<List<PostDto>> GetPostsAsync()

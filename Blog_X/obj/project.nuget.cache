@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xPyA7nlQYfgqNk21AYu0L7SGNBKbXXKbjRbzphEcjeshOFlyQ3YH2l/nk+RO66nL3oOq+JHgoL0TJPqWsiqtdg==",
+  "dgSpecHash": "RWByuK5BJL+BVa1sukTwHR53TJOIUqvC0jYfdLwh/5Qo974vmyi+CFD2kakFdf2RFbgOoFy++9NiUa/q0ycc2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\desktop\\.NEt\\Blog_X\\Blog_X.csproj",
+  "projectFilePath": "C:\\Users\\HP\\desktop\\.NET\\Blog_X\\Blog_X.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\blazored.localstorage\\4.4.0\\blazored.localstorage.4.4.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.11\\microsoft.aspnetcore.authorization.7.0.11.nupkg.sha512",

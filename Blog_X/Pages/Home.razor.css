@@ -11,7 +11,8 @@
 .main1{
     display: flex;
     gap: 0px;
-    width: 100%;
+    width: 90%;
+    overflow-x: hidden;
     
 }
 .hotT{
@@ -29,6 +30,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    gap: 10px;
     color: white;
     border-bottom: 1px solid rgb(71, 70, 70);
     height: 5rem;
@@ -38,11 +40,9 @@
 .post1{
     height: 70vh;
     width: 80%;
-    margin-top: 2%;
-    margin-left: 0;
 }
 .image1 {
-    height: 85%;
+    height: 60%;
 }
 .image1 img{
     height: 100%;

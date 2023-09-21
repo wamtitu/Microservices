@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Md18JAidei8lYRvsI0Yzt+qBVHKBSX1ZCP9BmZY3bilI43YuA4BPwaAdJPIoofzMIGwjarAwhANlcJJ9RaiBOA==",
+  "dgSpecHash": "+vghRSII1pgDTiwZuMiqC99EAVmxjdZXH/njlA9adhqnHDRM6EaGUfbkQ3oOIGa8BBAO8UDWfdcO6E5DcID3cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\desktop\\.NEt\\Blog-Post\\Blog-Post.csproj",
+  "projectFilePath": "C:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

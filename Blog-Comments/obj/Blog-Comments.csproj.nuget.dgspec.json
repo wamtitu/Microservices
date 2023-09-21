@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\HP\\desktop\\.NEt\\Blog-Comments\\Blog-Comments.csproj": {}
+    "c:\\Users\\HP\\desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj": {}
   },
   "projects": {
-    "c:\\Users\\HP\\desktop\\.NEt\\Blog-Comments\\Blog-Comments.csproj": {
+    "c:\\Users\\HP\\desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NEt\\Blog-Comments\\Blog-Comments.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj",
         "projectName": "Blog-Comments",
-        "projectPath": "c:\\Users\\HP\\desktop\\.NEt\\Blog-Comments\\Blog-Comments.csproj",
+        "projectPath": "c:\\Users\\HP\\desktop\\.NET\\Blog-Comments\\Blog-Comments.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP\\desktop\\.NEt\\Blog-Comments\\obj\\",
+        "outputPath": "c:\\Users\\HP\\desktop\\.NET\\Blog-Comments\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"

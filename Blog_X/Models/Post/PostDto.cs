@@ -8,6 +8,7 @@ namespace Blog_X.Models.Post
 {
     public class PostDto
     {
+        public Guid PostId {get; set;}
         [Required]
         public Guid UserId {get; set;}
         [Required]
