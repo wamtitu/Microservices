@@ -39,7 +39,7 @@ namespace Blog_X.Services.Posts
             var res = await _httpClient.DeleteAsync($"{BaseUrl}/api/Post/{id}");
             var content = await res.Content.ReadAsStringAsync();
 
-            var results = JsonConvert.DeserializeObject<ResponseDto>(content);
+            var results = JsonConvert.DeserializeObject<ResponseDto>(content.ToString());
             if (results.IsSuccess)
             {
                 
@@ -54,7 +54,7 @@ namespace Blog_X.Services.Posts
         {
            var response = await _httpClient.GetAsync($"{BaseUrl}/api/Post/onePost?Id={Id}");
            var content = await response.Content.ReadAsStringAsync();
-            var results = JsonConvert.DeserializeObject<ResponseDto>(content);
+            var results = JsonConvert.DeserializeObject<ResponseDto>(content.ToString());
             if(results.IsSuccess){
                 return JsonConvert.DeserializeObject<PostDto>(results.Result.ToString());
             }

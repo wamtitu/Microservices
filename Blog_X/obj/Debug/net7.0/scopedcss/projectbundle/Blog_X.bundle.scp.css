@@ -42,7 +42,7 @@ body[b-9t84wit9pu]{
 }
 .post1[b-9t84wit9pu]{
     /* height: 75vh; */
-    width: 70%;
+    width: 80%;
     border: 1px solid black;
     border-radius: 5px;
     margin-top: 4%;
@@ -93,6 +93,20 @@ button a[b-9t84wit9pu]{
     display: flex;
     align-items: center;
     gap: 20px; 
+}
+.user p[b-9t84wit9pu]{
+    text-decoration: dashed;
+}
+.comments[b-9t84wit9pu]{
+    border: 1px solid black;
+    margin: auto 4%;
+    background: rgb(228, 226, 226);
+}
+/* .comments{
+} */
+.comment[b-9t84wit9pu]{
+    border-bottom: 1px solid black;
+    margin: auto 2%;
 }
 /* /Pages/Login.razor.rz.scp.css */
 .main[b-c7b0irm62y]{

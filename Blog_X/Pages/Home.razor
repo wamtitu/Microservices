@@ -1,5 +1,6 @@
 ﻿@page "/home"
 @inject IPostInterface postinterface
+@inject ICommentInterface commentService
 <div class="main1">
     <div class="hotT">
         <a href="/Post">AddPost</a>
@@ -27,7 +28,30 @@
                         <div class="col-12 story">
                             <p>@post.Title</p>
                             <p> @post.Description</p>
-                        </div>
+                            <div class="comments" @onclick="@(()=>handleComments(@post.PostId))">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 368c26.5 0 48 21.5 48 48v16l72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16V352c0 8.8 7.2 16 16 16h96zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3V474.7v-6.4V468v-4V416H112 64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H448c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H309.3L208 492z"/></svg>                            </div>
+                             </div>
+                             @if(postid == post.PostId){
+                                <div class="form-group p-2">
+                                   <EditForm Model="comment" OnValidSubmit="AddComment">
+                                        <label for="name">Comment</label>
+                                        <InputText type="Description" class="form-control p-2" id="Description" @bind-Value="@comment.CommentDesc" aria-describedby="name" />
+                                        <ValidationMessage For="@(()=>comment.CommentDesc)" />
+                                        <button type="submit" style="width:150px" class=" p-2 m-1 btn btn-primary">Comment</button>
+                                   </EditForm> 
+                                </div>
+                                <div class=" border m-3 rounded comments">
+                                    @if(comments.Count >0){
+                                        <h3>Comments</h3>
+                                        @foreach(var comment in comments){
+                                            <div class ="m-4 border-bottom comment"> 
+                                                <p>@comment.CommentDesc</p>
+                                                <p>@comment.craetedAt</p>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                             }
                         @if(Id == post.UserId){
 
                             <div class="row buttons">
@@ -35,6 +59,8 @@
                                 <button style="width:100px" class=" p-2 m-1 btn btn-primary"><a  href="/post/update/@post.PostId">update</a></button>
                             </div>
                         }
+
+
                     </div>
                 </div>
                 }
@@ -48,10 +74,14 @@
 @code{
 
     public List<PostDto> posts = new List<PostDto>();
+    public List<Comment> comments = new List<Comment>();
+    public CommentRequest comment = new CommentRequest();
     
     private bool isLoading = true;
 
     public  Guid? Id { get; set; }
+
+    public Guid postid {get; set;}
 
      [CascadingParameter]
     public Task<AuthenticationState> _authState { get; set; }
@@ -69,10 +99,26 @@
         isLoading = false;
 
     }
+    public async Task handleComments(Guid id){
+        postid = id;
+        comments=await commentService.GetComments(postid);
+    }
 
     public async Task deletePost(Guid id){
         Console.WriteLine(id);
         var res = await postinterface.DeletePostAsync(id);
         Console.WriteLine("deleted");
+    }
+
+    public async Task AddComment(){
+        var authState = await _authState;
+        var user = authState.User.FindFirst("sub")?.Value;
+        comment.PostId = postid;
+        comment.UserId = Guid.Parse(user);
+
+       var res = await commentService.AddComment(comment);
+        
+        comment.CommentDesc = "";
+
     }
 }

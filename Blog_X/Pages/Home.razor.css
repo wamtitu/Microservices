@@ -41,7 +41,7 @@ body{
 }
 .post1{
     /* height: 75vh; */
-    width: 70%;
+    width: 80%;
     border: 1px solid black;
     border-radius: 5px;
     margin-top: 4%;
@@ -92,4 +92,18 @@ button a{
     display: flex;
     align-items: center;
     gap: 20px; 
+}
+.user p{
+    text-decoration: dashed;
+}
+.comments{
+    border: 1px solid black;
+    margin: auto 4%;
+    background: rgb(228, 226, 226);
+}
+/* .comments{
+} */
+.comment{
+    border-bottom: 1px solid black;
+    margin: auto 2%;
 }

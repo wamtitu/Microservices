@@ -29,6 +29,7 @@
         <ValidationMessage For="@(()=>newPost.ImageUrl)" />
     </div>
     <div class="flex-row m-2" p-2>
+        
          @if (newPost.PostId == Guid.Empty)
                 {
                     <button type="submit" style="width:150px" class=" p-2 m-1 btn btn-primary">Add Product</button>
@@ -61,7 +62,7 @@
             navigationManager.NavigateTo("/");
         }else{
             var res = await postservice.UpdatePostAsync(newPost.PostId, newPost);
-            navigationManager.NavigateTo("/");
+            navigationManager.NavigateTo("/home");
         }
 
         newPost.Title = "";

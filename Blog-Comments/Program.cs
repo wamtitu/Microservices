@@ -23,6 +23,12 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.AddSwaggenGenExtension();
 builder.AddAppAuthentication();
+builder.Services.AddCors(options => options.AddPolicy("policy1", build =>
+{
+    build.WithOrigins("http://localhost:5100");
+    build.AllowAnyHeader();
+    build.AllowAnyMethod();
+}));
 
 var app = builder.Build();
 
@@ -39,5 +45,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseCors("policy1");
 
 app.Run();
