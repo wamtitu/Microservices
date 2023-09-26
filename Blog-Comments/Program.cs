@@ -25,7 +25,7 @@ builder.AddSwaggenGenExtension();
 builder.AddAppAuthentication();
 builder.Services.AddCors(options => options.AddPolicy("policy1", build =>
 {
-    build.WithOrigins("http://localhost:5100");
+    build.WithOrigins("http://localhost:5252");
     build.AllowAnyHeader();
     build.AllowAnyMethod();
 }));
