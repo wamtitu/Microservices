@@ -12,7 +12,7 @@ namespace Blog_X.Services.Posts
     public class PostService : IPostInterface
     {
         private readonly HttpClient _httpClient;
-        private readonly string BaseUrl = "http://localhost:5003";
+        private readonly string BaseUrl = "http://localhost:5252";
 
         public PostService(HttpClient httpClient)
         {

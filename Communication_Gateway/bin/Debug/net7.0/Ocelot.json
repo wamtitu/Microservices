@@ -1,0 +1,55 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Post/GetPosts",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/GetPosts",
+            "UpstreamHttpMethod": [ "Get" ]
+            },
+        {
+            "DownstreamPathTemplate": "/api/Post/Addpost",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/Addpost",
+            "UpstreamHttpMethod": [ "Post" ]
+            },
+        {
+            "DownstreamPathTemplate": "/api/Post/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/{id}",
+            "UpstreamHttpMethod": [ "Delete", "Put" ]
+            },
+        {
+            "DownstreamPathTemplate": "/api/Post/onePost?Id={Id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/onePost?Id={Id}",
+            "UpstreamHttpMethod": [ "Get" ]
+            }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5252"
+    }
+}

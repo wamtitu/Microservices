@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog-Comments", "Blog-Comme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog_X", "Blog_X\Blog_X.csproj", "{20A2F506-ACCA-4728-80DE-C3030B6BBE6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Communication_Gateway", "Communication_Gateway\Communication_Gateway.csproj", "{276CB402-DC23-42D7-A028-CC00EBB5464F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{20A2F506-ACCA-4728-80DE-C3030B6BBE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20A2F506-ACCA-4728-80DE-C3030B6BBE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20A2F506-ACCA-4728-80DE-C3030B6BBE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276CB402-DC23-42D7-A028-CC00EBB5464F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276CB402-DC23-42D7-A028-CC00EBB5464F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276CB402-DC23-42D7-A028-CC00EBB5464F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276CB402-DC23-42D7-A028-CC00EBB5464F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

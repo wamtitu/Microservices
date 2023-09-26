@@ -45,6 +45,10 @@
                                         <h3>Comments</h3>
                                         @foreach(var comment in comments){
                                             <div class ="m-4 border-bottom comment"> 
+                                                <div class="user">
+                                                    <div class="avater"></div>
+                                                    <p>Joe</p>
+                                                </div>
                                                 <p>@comment.CommentDesc</p>
                                                 <p>@comment.craetedAt</p>
                                             </div>

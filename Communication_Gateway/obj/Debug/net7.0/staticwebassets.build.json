@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wPujk8Cuf8YeGPsIb5AII9sWoJOXz2fGBLH2kuGCeoo=",
+  "Source": "Communication_Gateway",
+  "BasePath": "_content/Communication_Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

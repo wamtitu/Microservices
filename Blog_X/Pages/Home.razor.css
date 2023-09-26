@@ -93,17 +93,18 @@ button a{
     align-items: center;
     gap: 20px; 
 }
-.user p{
+/* .user p{
     text-decoration: dashed;
 }
 .comments{
     border: 1px solid black;
     margin: auto 4%;
     background: rgb(228, 226, 226);
+}*/
+.comments{
+    margin-left: 5%;
 }
-/* .comments{
-} */
-.comment{
+/* .comment{
     border-bottom: 1px solid black;
     margin: auto 2%;
-}
+} */ 

@@ -94,20 +94,21 @@ button a[b-9t84wit9pu]{
     align-items: center;
     gap: 20px; 
 }
-.user p[b-9t84wit9pu]{
+/* .user p{
     text-decoration: dashed;
 }
-.comments[b-9t84wit9pu]{
+.comments{
     border: 1px solid black;
     margin: auto 4%;
     background: rgb(228, 226, 226);
+}*/
+.comments[b-9t84wit9pu]{
+    margin-left: 5%;
 }
-/* .comments{
-} */
-.comment[b-9t84wit9pu]{
+/* .comment{
     border-bottom: 1px solid black;
     margin: auto 2%;
-}
+} */ 
 /* /Pages/Login.razor.rz.scp.css */
 .main[b-c7b0irm62y]{
     height: 65vh;

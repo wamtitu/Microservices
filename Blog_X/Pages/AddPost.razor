@@ -59,7 +59,7 @@
             newPost.UserId = Guid.Parse(userId);
             Console.WriteLine(newPost.UserId);
             var res = await postservice.AddPostAsync(newPost);
-            navigationManager.NavigateTo("/");
+            navigationManager.NavigateTo("/home");
         }else{
             var res = await postservice.UpdatePostAsync(newPost.PostId, newPost);
             navigationManager.NavigateTo("/home");
