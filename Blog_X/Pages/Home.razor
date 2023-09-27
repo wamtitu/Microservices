@@ -93,19 +93,16 @@
 
     protected override async Task OnInitializedAsync(){
 
-        var post = await postinterface.GetPostsAsync();
-        if (post != null)
-        {
-            posts = post;
-            isLoading = false;
-        }
-        // var authState = await _authState;
-        //  user = authState.User?.FindFirst("sub")?.Value;
-        // Console.WriteLine(user);
 
-        // if(user != null){
-        //     Id = Guid.Parse(user);
-        // }
+        var authState = await _authState;
+        user = authState.User?.FindFirst("sub")?.Value;
+        Console.WriteLine(user);
+
+        if(user != null){
+            Id = Guid.Parse(user);
+        }
+            posts = await postinterface.GetPostsAsync();
+            isLoading = false;
 
     }
     public async Task handleComments(Guid id){
@@ -126,6 +123,10 @@
         comment.UserId = Guid.Parse(user);
 
        var res = await commentService.AddComment(comment);
+       if(res!=null){
+        handleComments(comment.PostId);
+       }
+
         
         comment.CommentDesc = "";
 

@@ -78,3 +78,4 @@ C:\Users\HP\Desktop\.NET\Blog-Post\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Users\HP\Desktop\.NET\Blog-Post\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\HP\Desktop\.NET\Blog-Post\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\HP\Desktop\.NET\Blog-Post\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\HP\desktop\.NET\Blog-Post\bin\Debug\net7.0\appsettings.Production.json

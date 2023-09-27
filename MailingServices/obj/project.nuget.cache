@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QNvn6eA9ikawndXUhUj2z4Fe5zvCELRimC0F7LqWUrMIobPnXc+Dugz0dcVJ65jWY0qvwaTohlQfpa41kObdrg==",
+  "dgSpecHash": "JP2fDth5LR94y7Hg7bYZuIbb6tOTToMfQmniMPasCAO94LnLCGoHrF+sRL3ps7IYNhKSKiS4gajeEeeUd0wErQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\.NET\\MailingServices\\MailingServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

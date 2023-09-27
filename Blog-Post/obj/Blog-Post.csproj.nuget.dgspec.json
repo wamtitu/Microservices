@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {}
+    "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {}
   },
   "projects": {
-    "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {
+    "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
         "projectName": "Blog-Post",
-        "projectPath": "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

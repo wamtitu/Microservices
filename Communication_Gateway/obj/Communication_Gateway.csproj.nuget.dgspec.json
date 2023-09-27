@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {}
+    "C:\\Users\\HP\\Desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {}
   },
   "projects": {
-    "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {
+    "C:\\Users\\HP\\Desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
         "projectName": "Communication_Gateway",
-        "projectPath": "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\.NET\\Communication_Gateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

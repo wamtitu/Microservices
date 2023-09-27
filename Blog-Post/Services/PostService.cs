@@ -50,7 +50,7 @@ namespace Blog_Post.Services
 
         public async Task<List<Post>> GetPostsAsync()
         {
-            return await _context.Posts.Include(p => p.Comments).ToListAsync();
+            return await _context.Posts.ToListAsync();
         }
 
         public async Task<List<Post>> GetUSersPosts(Guid id)
