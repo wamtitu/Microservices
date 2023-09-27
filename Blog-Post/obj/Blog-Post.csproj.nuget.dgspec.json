@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {}
+    "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {
+    "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
         "projectName": "Blog-Post",
-        "projectPath": "C:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+        "projectPath": "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\desktop\\.NET\\Blog-Post\\obj\\",
+        "outputPath": "c:\\Users\\HP\\desktop\\.NET\\Blog-Post\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

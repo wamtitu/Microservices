@@ -25,7 +25,7 @@ builder.Services.AddScoped<IPostService, PostService>();
 
 builder.Services.AddCors(options => options.AddPolicy("policy1", build =>
 {
-    build.WithOrigins("http://localhost:5252");
+    build.AllowAnyOrigin();
     build.AllowAnyHeader();
     build.AllowAnyMethod();
 }));
@@ -36,11 +36,15 @@ builder.AddAppAuthentication();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    if (!app.Environment.IsDevelopment())
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AUTH API");
+        c.RoutePrefix = string.Empty;
+    }
+});
 app.UseMigration();
 
 app.UseHttpsRedirection();

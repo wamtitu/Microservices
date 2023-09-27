@@ -1,0 +1,20 @@
+.main[b-c7b0irm62y]{
+    height: 65vh;
+    margin: 4% 20%;
+    border: 2px solid rgb(52, 52, 136);
+    background: rgb(46, 46, 124);
+    color: white;
+    border-radius: 2%;
+}
+.banner[b-c7b0irm62y]{
+    height: 60vh;
+}
+.banner img[b-c7b0irm62y]{
+    margin: 6% 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 4%;
+}
+.reg[b-c7b0irm62y]{
+    color: rgb(16, 235, 16);
+}

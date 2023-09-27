@@ -80,27 +80,32 @@
     public List<PostDto> posts = new List<PostDto>();
     public List<Comment> comments = new List<Comment>();
     public CommentRequest comment = new CommentRequest();
-    
+
     private bool isLoading = true;
 
     public  Guid? Id { get; set; }
 
     public Guid postid {get; set;}
+    public string? user {get; set;}
 
-     [CascadingParameter]
+    [CascadingParameter]
     public Task<AuthenticationState> _authState { get; set; }
 
     protected override async Task OnInitializedAsync(){
-        
-        var authState = await _authState;
-        var user = authState.User.FindFirst("sub")?.Value;
-        Console.WriteLine(user);
 
-        posts = await postinterface.GetPostsAsync();
-        if(user != null){
-            Id = Guid.Parse(user);
+        var post = await postinterface.GetPostsAsync();
+        if (post != null)
+        {
+            posts = post;
+            isLoading = false;
         }
-        isLoading = false;
+        // var authState = await _authState;
+        //  user = authState.User?.FindFirst("sub")?.Value;
+        // Console.WriteLine(user);
+
+        // if(user != null){
+        //     Id = Guid.Parse(user);
+        // }
 
     }
     public async Task handleComments(Guid id){

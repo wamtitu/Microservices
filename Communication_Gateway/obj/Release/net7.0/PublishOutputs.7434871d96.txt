@@ -1,0 +1,17 @@
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Communication_Gateway.exe
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Ocelot.json
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Ocelot.Production.json
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Communication_Gateway.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Communication_Gateway.deps.json
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Communication_Gateway.runtimeconfig.json
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Communication_Gateway.pdb
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\FluentValidation.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
+C:\Users\HP\Desktop\.NET\Communication_Gateway\obj\Release\net7.0\PubTmp\Out\Ocelot.dll

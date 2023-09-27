@@ -4065,19 +4065,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
       "projectName": "Blog-Post",
-      "projectPath": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\Blog-Post.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\.NET\\Blog-Post\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

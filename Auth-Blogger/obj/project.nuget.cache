@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "czLuHZ18MiSb4TP+vwbWm7F8yftqjcH2QIXuIO4qSkEHq4rkLhrtSyLFjubgxWAplUyvJ1GTKxAbQzXgUWhHNw==",
+  "dgSpecHash": "ULyS6rIf0mptu/KVhu+fEUBpFq0G67f+sZkac15ezpw03gg66XFKR67n2v0BIR9nqT8FuxBjVzwCiHV5rnysGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
+  "projectFilePath": "c:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

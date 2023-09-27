@@ -1,0 +1,82 @@
+{
+    "Routes": [
+        // posts
+        {
+            "DownstreamPathTemplate": "/api/Post/GetPosts",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/GetPosts",
+            "UpstreamHttpMethod": [ "Get" ]
+            },
+        {
+            "DownstreamPathTemplate": "/api/Post/Addpost",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/Addpost",
+            "UpstreamHttpMethod": [ "Post" ]
+            },
+        {
+            "DownstreamPathTemplate": "/api/Post/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/{id}",
+            "UpstreamHttpMethod": [ "Delete", "Put" ]
+            },
+        {
+            "DownstreamPathTemplate": "/api/Post/onePost?Id={Id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/onePost?Id={Id}",
+            "UpstreamHttpMethod": [ "Get" ]
+            },
+        //comments
+        {
+            "DownstreamPathTemplate": "/api/Comment/post/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5005
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Comment/post/{id}",
+            "UpstreamHttpMethod": [ "Get" ]
+            },
+        {
+            "DownstreamPathTemplate": "/api/Comment/AddComment",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5005
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Comment/AddComment",
+            "UpstreamHttpMethod": [ "Post" ]
+            }
+
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5252"
+    }
+}

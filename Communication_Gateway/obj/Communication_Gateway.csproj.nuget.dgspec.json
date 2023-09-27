@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {}
+    "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {
+    "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
         "projectName": "Communication_Gateway",
-        "projectPath": "C:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
+        "projectPath": "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\Communication_Gateway.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\obj\\",
+        "outputPath": "c:\\Users\\HP\\desktop\\.NET\\Communication_Gateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

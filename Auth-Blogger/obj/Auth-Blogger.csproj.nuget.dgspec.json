@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {}
+    "c:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {
+    "c:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
         "projectName": "Auth-Blogger",
-        "projectPath": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
+        "projectPath": "c:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\Auth-Blogger.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\obj\\",
+        "outputPath": "c:\\Users\\HP\\desktop\\.NET\\Auth-Blogger\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

@@ -12,7 +12,7 @@ namespace Blog_X.Services.Comments
     public class CommentService : ICommentInterface
     {
         private readonly HttpClient _httpClient;
-        private readonly string BaseUrl = "http://localhost:5252";
+        private readonly string BaseUrl = "https://communicationgateway.azurewebsites.net";
         public CommentService(HttpClient httpClient)
         {
             _httpClient = httpClient;

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hefQejazC+h5dSDGdz79ZI08PSPMZcPmHbbqKBPNlUk=",
+  "Source": "Communication_Gateway",
+  "BasePath": "_content/Communication_Gateway",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -12,7 +12,7 @@ namespace Blog_X.Services.Authentication
     public class AuthService : IAuthInteface
     {
         private readonly HttpClient _httpClient;
-        private readonly string BaseUrl = "http://localhost:5000";
+        private readonly string BaseUrl = "https://auth-bloggerapi.azurewebsites.net";
         public AuthService(HttpClient httpClient)
         {
             _httpClient = httpClient;
