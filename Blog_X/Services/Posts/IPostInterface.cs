@@ -11,6 +11,7 @@ namespace Blog_X.Services.Posts
     {
         Task<List<PostDto>> GetPostsAsync();
         Task<PostDto> GetPostByIdAsync(Guid Id);
+        Task<List<PostDto>> GetPostByUserIdAsync(Guid Id);
         Task<ResponseDto> DeletePostAsync(Guid Id);
         Task<ResponseDto> UpdatePostAsync(Guid id, PostDto UpdatedPost);
         Task<string> AddPostAsync(PostDto newPost);

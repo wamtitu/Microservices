@@ -35,3 +35,4 @@ C:\Users\HP\desktop\.NET\Communication_Gateway\obj\Debug\net7.0\refint\Communica
 C:\Users\HP\desktop\.NET\Communication_Gateway\obj\Debug\net7.0\Communication_Gateway.pdb
 C:\Users\HP\desktop\.NET\Communication_Gateway\obj\Debug\net7.0\Communication_Gateway.genruntimeconfig.cache
 C:\Users\HP\desktop\.NET\Communication_Gateway\obj\Debug\net7.0\ref\Communication_Gateway.dll
+C:\Users\HP\desktop\.NET\Communication_Gateway\bin\Debug\net7.0\Ocelot.Production.json

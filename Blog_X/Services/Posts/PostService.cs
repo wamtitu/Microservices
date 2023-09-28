@@ -12,7 +12,7 @@ namespace Blog_X.Services.Posts
     public class PostService : IPostInterface
     {
         private readonly HttpClient _httpClient;
-        //private readonly string BaseUrl = "http://localhost:5003";
+        // private readonly string BaseUrl = "http://localhost:5003";
         private readonly string BaseUrl = "https://communicationgateway.azurewebsites.net";
 
         public PostService(HttpClient httpClient)
@@ -61,6 +61,18 @@ namespace Blog_X.Services.Posts
             }
             return new PostDto();
 
+        }
+
+        public async Task<List<PostDto>> GetPostByUserIdAsync(Guid Id)
+        {
+            var response = await _httpClient.GetAsync($"{BaseUrl}/api/Post/user{Id}");
+            var content = await response.Content.ReadAsStringAsync();
+            var results = JsonConvert.DeserializeObject<ResponseDto>(content);
+
+            if(results.IsSuccess){
+                return JsonConvert.DeserializeObject<List<PostDto>>(results.Result.ToString());
+            }
+            return new List<PostDto>();
         }
 
         public async Task<List<PostDto>> GetPostsAsync()

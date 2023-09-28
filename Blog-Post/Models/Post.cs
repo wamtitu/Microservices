@@ -13,7 +13,7 @@ namespace Blog_Post.Models
         public string Title {get; set;}
         public string Description {get;set;}
         public DateTime postedOn {get;set;} = DateTime.Now;
-        public string ImageUrl {get; set;}
+        public string? ImageUrl {get; set;}
         [NotMapped]
         public List<Comment> Comments {get;set;}= new List<Comment>();
     }

@@ -13,6 +13,17 @@
       "UpstreamHttpMethod": [ "Get" ]
     },
     {
+      "DownstreamPathTemplate": "/api/Post/user{Id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-postapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Post/user{Id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
       "DownstreamPathTemplate": "/api/Post/Addpost",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [

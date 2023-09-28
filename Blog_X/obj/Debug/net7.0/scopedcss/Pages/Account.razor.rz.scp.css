@@ -1,0 +1,110 @@
+body[b-ismasi83ev]{
+    padding: 0;
+    margin: 0;
+}
+.main[b-ismasi83ev]{
+    /* margin-top: 16vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    /* grid-template-columns: 1fr; */
+    /* margin: 3% 10%; */
+    /* justify-content: center; */
+}
+.main1[b-ismasi83ev]{
+    display: flex;
+    gap: 0px;
+    width: 90%;    
+}
+.hotT[b-ismasi83ev]{
+    /* margin-top: 15vh; */
+    width: 20%;
+    border-right: 1px solid blue;
+    background: rgb(94, 94, 206);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-radius:0 8px 8px 0;
+}
+.hotT a[b-ismasi83ev]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 10px;
+    color: white;
+    border-bottom: 1px solid rgb(71, 70, 70);
+    height: 5rem;
+    font-size: large;
+
+}
+.post1[b-ismasi83ev]{
+    /* height: 75vh; */
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 4%;
+}
+.image1[b-ismasi83ev] {
+    /* margin: 10px; */
+    margin:0 5%;
+    height: 45vh;
+    width: 90%;
+}
+.image1 img[b-ismasi83ev]{
+    height: 100%;
+    width: 100%;
+    border-radius: 1%;
+}
+button a[b-ismasi83ev]{
+    color: white;
+    text-decoration: none;
+}
+.btn-primary[b-ismasi83ev]{
+    margin-right: 10px;
+}
+.story p[b-ismasi83ev]{
+    margin-bottom: 0rem;
+    margin-left: 5%;
+}
+.buttons[b-ismasi83ev]{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.avater[b-ismasi83ev]{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://images.pexels.com/photos/18218828/pexels-photo-18218828/free-photo-of-man-in-a-cute-helmet-on-a-motorbike.png?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.user1[b-ismasi83ev]{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:2% 8% ;
+}
+.user[b-ismasi83ev]{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+/* .user p{
+    text-decoration: dashed;
+}
+.comments{
+    border: 1px solid black;
+    margin: auto 4%;
+    background: rgb(228, 226, 226);
+}*/
+.comments[b-ismasi83ev]{
+    margin-left: 5%;
+}
+/* .comment{
+    border-bottom: 1px solid black;
+    margin: auto 2%;
+} */ 

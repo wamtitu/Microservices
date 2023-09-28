@@ -22,29 +22,6 @@ namespace Blog_Post.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Blog_Post.Models.Comment", b =>
-                {
-                    b.Property<Guid>("CommentId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("CommentDesc")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("PostId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("CommentId");
-
-                    b.HasIndex("PostId");
-
-                    b.ToTable("Comment");
-                });
-
             modelBuilder.Entity("Blog_Post.Models.Post", b =>
                 {
                     b.Property<Guid>("PostId")
@@ -56,7 +33,6 @@ namespace Blog_Post.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
@@ -72,20 +48,6 @@ namespace Blog_Post.Migrations
                     b.HasKey("PostId");
 
                     b.ToTable("Posts");
-                });
-
-            modelBuilder.Entity("Blog_Post.Models.Comment", b =>
-                {
-                    b.HasOne("Blog_Post.Models.Post", null)
-                        .WithMany("Comments")
-                        .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Blog_Post.Models.Post", b =>
-                {
-                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

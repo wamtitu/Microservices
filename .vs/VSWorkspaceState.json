@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Blog_X\\Pages",
+    "\\MailingServices",
+    "\\MailingServices\\Messaging"
   ],
-  "SelectedNode": "\\Microservices.sln",
+  "SelectedNode": "\\MailingServices\\Messaging\\AzureMessageBusConsumer.cs",
   "PreviewInSolutionExplorer": false
 }

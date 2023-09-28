@@ -65,7 +65,7 @@ namespace MailingServices.Messaging
             try
             {
                 StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.Append("<img src=\"https://unsplash.com/photos/ip9R11FMbV8\" width=\"1000\" height=\"600\">");
+                stringBuilder.Append("<img src=\"https://images.pexels.com/photos/18218828/pexels-photo-18218828/free-photo-of-man-in-a-cute-helmet-on-a-motorbike.png?auto=compress&cs=tinysrgb&w=1600\" width =\"1000\" height=\"600\">");
                 stringBuilder.Append("<h1> Hello " + userMessage.Name + "</h1>");
                 stringBuilder.AppendLine("<br/>Welcome to The Blog ");
 

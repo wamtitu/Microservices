@@ -1,0 +1,108 @@
+@page "/Account/{user}"
+@inject IPostInterface postinterface
+@inject ICommentInterface commentService
+
+<div class="card m-5 col-10">
+    @if(isLoading){
+        <p>Loading</p>
+    }else{
+        <div class="">
+            <h1>@userName</h1>
+            <h3>@userEmail</h3>
+            <a href="/Post">Add Post</a>
+        </div>
+            @if(posts.Count >0){
+                <div class= " main">
+                @foreach(var post in posts){
+                <div class="card m-5 col-8 post1">
+                    <div class = " flex user1">
+                        <div class="user">
+                            <div class="avater"></div>
+                            <p>@userName</p>
+                        </div>
+                        <h1>...</h1>
+
+                    </div>
+                    @if(post.ImageUrl != null){
+
+                        <div class=" image1">
+                            <img src="@post.ImageUrl" class="img-fluid" alt=""/>
+                        </div>
+                    }
+                    <div class="item">
+                        <div class="story">
+                            <p>@post.Title</p>
+                            <p> @post.Description</p>
+                            <div class="comments" @onclick="@(()=>handleComments(@post.PostId))">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 368c26.5 0 48 21.5 48 48v16l72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16V352c0 8.8 7.2 16 16 16h96zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3V474.7v-6.4V468v-4V416H112 64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H448c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H309.3L208 492z"/></svg>                            </div>
+                             </div>
+                             @if(postid == post.PostId){
+                                <div class=" border m-3 rounded comments">
+                                    @if(comments.Count >0){
+                                        <h3>Comments</h3>
+                                        @foreach(var comment in comments){
+                                            <div class ="m-4 border-bottom comment"> 
+                                                <div class="user">
+                                                    <div class="avater"></div>
+                                                    <p>Joe</p>
+                                                </div>
+                                                <p>@comment.CommentDesc</p>
+                                                <p>@comment.craetedAt</p>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                             }
+
+                            <div class="row buttons">
+                                <button @onclick="@(()=>deletePost(post.PostId))" style="width:100px" class=" p-2 m-1 btn btn-danger">delete</button>
+                                <button style="width:100px" class=" p-2 m-1 btn btn-success"><a  href="/post/update/@post.PostId">update</a></button>
+                            </div>
+
+
+                    </div>
+                </div>
+                }
+            </div>   
+            }else{
+                <p>No posts found!!!!</p>
+            }
+    }
+</div>
+
+@code{
+    [Parameter]
+    public string user {get; set;}
+
+    private bool isLoading = true;
+    public Guid postid {get; set;}
+    public string userEmail{get; set;}
+    public string userName{get; set;}
+    public List<PostDto> posts = new List<PostDto>();
+    public List<Comment> comments = new List<Comment>();
+
+    [CascadingParameter]
+    public Task<AuthenticationState> _authState { get; set; }
+
+
+    protected override async Task OnInitializedAsync(){
+        var authState = await _authState;
+        userName = authState.User?.FindFirst("name")?.Value;
+        userEmail = authState.User?.FindFirst("email")?.Value;
+
+            posts = await postinterface.GetPostByUserIdAsync(Guid.Parse(user));
+            isLoading = false;
+
+    }
+    public async Task handleComments(Guid id){
+        postid = id;
+        comments=await commentService.GetComments(postid);
+    }
+
+    public async Task deletePost(Guid id){
+        Console.WriteLine(id);
+        var res = await postinterface.DeletePostAsync(id);
+        Console.WriteLine("deleted");
+    }
+
+}

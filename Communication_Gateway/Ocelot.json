@@ -49,6 +49,18 @@
             "UpstreamPathTemplate": "/api/Post/onePost?Id={Id}",
             "UpstreamHttpMethod": [ "Get" ]
             },
+        {
+            "DownstreamPathTemplate": "/api/Post/user{Id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5003
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Post/user{Id}",
+            "UpstreamHttpMethod": [ "Get" ]
+            },
         //comments
         {
             "DownstreamPathTemplate": "/api/Comment/post/{id}",

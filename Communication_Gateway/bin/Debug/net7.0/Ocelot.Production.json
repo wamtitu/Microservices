@@ -1,0 +1,87 @@
+{
+  "Routes": [
+    // posts
+    {
+      "DownstreamPathTemplate": "/api/Post/GetPosts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-postapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Post/GetPosts",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/user/{Id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-postapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Post/user/{Id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/Addpost",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-postapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Post/Addpost",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-postapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Post/{id}",
+      "UpstreamHttpMethod": [ "Delete", "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Post/onePost?Id={Id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-postapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Post/onePost?Id={Id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    //comments
+    {
+      "DownstreamPathTemplate": "/api/Comment/post/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-commentsapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Comment/post/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Comment/AddComment",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "blog-commentsapi.azurewebsites.net"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Comment/AddComment",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://communicationgateway.azurewebsites.net"
+  }
+}
