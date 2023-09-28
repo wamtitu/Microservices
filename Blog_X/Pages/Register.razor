@@ -1,5 +1,6 @@
 @page "/register"
 @inject IAuthInteface auth;
+@inject NavigationManager navigationManager
 
 <div class="row main">
     <div class="col-7">
@@ -49,5 +50,8 @@
         register.PhoneNumber = "";
         register.Name = "";
         register.Password = "";
+
+        navigationManager.NavigateTo("/");
+
     }
 }

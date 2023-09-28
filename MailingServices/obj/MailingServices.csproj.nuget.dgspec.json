@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\.NET\\MailingServices\\MailingServices.csproj": {}
+    "c:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\.NET\\MailingServices\\MailingServices.csproj": {
+    "c:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\.NET\\MailingServices\\MailingServices.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj",
         "projectName": "MailingServices",
-        "projectPath": "C:\\Users\\HP\\Desktop\\.NET\\MailingServices\\MailingServices.csproj",
+        "projectPath": "c:\\Users\\HP\\desktop\\.NET\\MailingServices\\MailingServices.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\.NET\\MailingServices\\obj\\",
+        "outputPath": "c:\\Users\\HP\\desktop\\.NET\\MailingServices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -841,3 +841,4 @@ C:\Users\HP\Desktop\.NET\Blog_X\obj\Release\net7.0\Blog_X.dll
 C:\Users\HP\Desktop\.NET\Blog_X\obj\Release\net7.0\refint\Blog_X.dll
 C:\Users\HP\Desktop\.NET\Blog_X\obj\Release\net7.0\Blog_X.pdb
 C:\Users\HP\Desktop\.NET\Blog_X\obj\Release\net7.0\ref\Blog_X.dll
+C:\Users\HP\Desktop\.NET\Blog_X\obj\Release\net7.0\scopedcss\Pages\Account.razor.rz.scp.css

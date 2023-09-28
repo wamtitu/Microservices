@@ -1,6 +1,7 @@
 ﻿@page "/home"
 @inject IPostInterface postinterface
 @inject ICommentInterface commentService
+@inject NavigationManager navigationManager
 <div class="main1">
     <div class="hotT">
         <a href="/Post">AddPost</a>
@@ -99,6 +100,7 @@
         }
             posts = await postinterface.GetPostsAsync();
             isLoading = false;
+        navigationManager.NavigateTo("/home");
 
     }
     public async Task handleComments(Guid id){
@@ -119,6 +121,8 @@
 
         
         comment.CommentDesc = "";
+
+        navigationManager.NavigateTo("/home");
 
     }
 }
